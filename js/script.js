@@ -31,7 +31,7 @@ if (ageInNumber < 18) {
     console.log('discount', discount, typeof discount)
     const finalPrice = price - discount;
 
-    alert('[Ridotto minorenne] Il prezzo del biglietto è €' + finalPrice)
+    alert('[Ridotto minorenne] Il prezzo del biglietto è €' + finalPrice .toFixed(2))
 
 }
 else if (ageInNumber > 65) {
@@ -44,7 +44,7 @@ else if (ageInNumber > 65) {
     console.log('discount', discount, typeof discount)
     const finalPrice = price - discount;
 
-    alert('[Ridotto over 65] Il prezzo del biglietto è €' + finalPrice)
+    alert('[Ridotto over 65] Il prezzo del biglietto è €' + finalPrice .toFixed(2))
 }
 else {
     console.log('Paga Tutto')
@@ -52,5 +52,5 @@ else {
     const price = kmInNumber * 0.21;
     console.log('price', price, typeof price);
 
-    alert('Il prezzo del biglietto è €' + price)
+    alert('Il prezzo del biglietto è €' + price .toFixed(2))
 }
